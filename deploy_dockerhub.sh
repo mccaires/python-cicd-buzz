@@ -2,5 +2,5 @@
 docker login -u $DOCKER_USER -p $DOCKER_PASS
 TAG="$TRAVIS_BUILD_NUMBER"
 
-docker build -f Dockerfile -t devfiap/MCCAIRES:$TAG .
-docker push devfiap/MCCAIRES
+docker build Dockerfile -t devfiap/mccaires:$TAG .
+docker push devfiap/mccaires
